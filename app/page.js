@@ -1,6 +1,10 @@
+
+'use client';
 import Image from "next/image";
+import { useChatAssistant } from "../components/ChatAssistant";
 
 export default function Home() {
+  const { openChat } = useChatAssistant();
   return (
     <main className="flex flex-col items-center justify-center min-h-screen px-4 py-12 bg-bg relative">
       <div className="absolute inset-0 pointer-events-none z-0">
@@ -32,7 +36,10 @@ export default function Home() {
             <span>💻</span> GitHub
           </a>
         </div>
-        <button className="mt-8 px-8 py-4 rounded-full bg-hero-gradient button-glow text-text font-semibold text-lg flex items-center gap-3 border-2 border-glass hover:scale-105 transition-all duration-200">
+        <button
+          className="mt-8 px-8 py-4 rounded-full bg-hero-gradient button-glow text-text font-semibold text-lg flex items-center gap-3 border-2 border-glass hover:scale-105 transition-all duration-200"
+          onClick={openChat}
+        >
           <span className="animate-pulse">⚡</span> Ask Me (AI)
         </button>
       </div>

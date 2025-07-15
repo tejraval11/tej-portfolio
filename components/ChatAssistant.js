@@ -1,8 +1,26 @@
 'use client';
-import { useState, useRef, useEffect } from "react";
+import { useState, useRef, useEffect, createContext, useContext } from "react";
+
+const ChatAssistantContext = createContext({ open: false, openChat: () => {}, closeChat: () => {} });
+
+export function useChatAssistant() {
+  return useContext(ChatAssistantContext);
+}
+
+export function ChatAssistantProvider({ children }) {
+  const [open, setOpen] = useState(false);
+  const openChat = () => setOpen(true);
+  const closeChat = () => setOpen(false);
+  return (
+    <ChatAssistantContext.Provider value={{ open, openChat, closeChat }}>
+      {children}
+      <ChatAssistant />
+    </ChatAssistantContext.Provider>
+  );
+}
 
 export default function ChatAssistant() {
-  const [open, setOpen] = useState(false);
+  const { open, openChat, closeChat } = useChatAssistant();
   const [messages, setMessages] = useState([
     { role: 'assistant', content: "Hi! I'm Tej Raval, your digital guide. Ask me anything about my projects, skills, or experience!" }
   ]);
@@ -49,7 +67,7 @@ export default function ChatAssistant() {
       {!open && (
         <button
           className="w-16 h-16 rounded-full bg-purple button-glow animate-pulse flex items-center justify-center text-2xl fixed bottom-6 right-6 z-50"
-          onClick={() => setOpen(true)}
+          onClick={openChat}
           aria-label="Open AI Chat Assistant"
         >
           🤖
@@ -59,7 +77,7 @@ export default function ChatAssistant() {
         <div className="fixed bottom-6 right-6 z-50 w-80 max-w-[90vw] glass border border-glass rounded-2xl card-glow flex flex-col h-[32rem]">
           <div className="flex items-center justify-between px-4 py-2 border-b border-glass">
             <span className="font-semibold text-text">Ask Tej (AI)</span>
-            <button onClick={() => setOpen(false)} className="text-secondary hover:text-text">✖</button>
+            <button onClick={closeChat} className="text-secondary hover:text-text">✖</button>
           </div>
           <div className="flex-1 overflow-y-auto p-4 space-y-3 bg-bg/80">
             {messages.map((msg, i) => (

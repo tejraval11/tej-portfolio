@@ -1,7 +1,8 @@
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import { Inter } from "next/font/google";
-import ChatAssistant from "../components/ChatAssistant";
+
+import { ChatAssistantProvider } from "../components/ChatAssistant";
 const inter = Inter({ subsets: ["latin"] });
 
 const geistSans = Geist({
@@ -58,11 +59,11 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en" className="bg-bg text-text">
       <body className={`${inter.className} min-h-screen bg-bg relative overflow-x-hidden`}>
-        <Navbar />
-        <div className="pt-16">{children}</div>
-        {/* Floating AI Chat Assistant */}
-        <ChatAssistant />
-        <Footer />
+        <ChatAssistantProvider>
+          <Navbar />
+          <div className="pt-16">{children}</div>
+          <Footer />
+        </ChatAssistantProvider>
       </body>
     </html>
   );
