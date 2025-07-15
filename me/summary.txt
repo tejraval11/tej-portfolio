@@ -1,0 +1,3 @@
+ My name is Tej Raval i am from Gujarat, India. I am a Computer Engineering graduate skilled in Java, Spring Boot, MERN Stack,Python, Agentic Ai and cloud technologies. Passionate about building
+ scalable web applications with REST APIs, microservices, and modern DevOps tools. Strong problem-solving ability and a
+ quick learner seeking to leverage academic knowledge in a professional environment

@@ -1,0 +1,62 @@
+
+TEJ RAVAL
+Visnagar, Gujarat, India
+Email: tejraval.connect@gmail.com | Phone: +91 6356818247
+GitHub: github.com/tejraval11 | LinkedIn: linkedin.com/in/tej-r-769241308 | LeetCode: leetcode.com/u/tejrawal
+
+====================================================================
+PROFILE
+====================================================================
+Full Stack Developer with strong skills in MERN, Next.js, Java Spring Boot, and modern AI technologies including LLM orchestration and agentic systems. Passionate about building scalable, intelligent applications with seamless frontend/backend integration. Experienced with GPT-based chatbot development and microservices architecture.
+
+====================================================================
+EDUCATION
+====================================================================
+Sankalchand Patel College of Engineering, Visnagar (2021 – 2025)
+Bachelor of Technology in Computer Engineering | CGPA: 8.15/10
+
+Nootan Sarva Vidyalaya (HSE, GSEB) – 76% (2021)
+Nootan Sarva Vidyalaya (SE, GSEB) – 84% (2019)
+
+====================================================================
+EXPERIENCE
+====================================================================
+Unified Mentor (Oct 2024 – Nov 2024) — Full Stack Developer Intern (Remote)
+- Developed a full-stack e-commerce app using the MERN stack
+- Implemented JWT authentication and connected REST APIs with MongoDB
+- Built responsive React frontend with dynamic UI components
+
+====================================================================
+PROJECTS
+====================================================================
+Restaurant Review Platform
+Tech: Java, Spring Boot, Elasticsearch, Kibana, React, Docker
+- Developed restaurant review app with fuzzy search & geospatial queries
+- Used Keycloak OAuth2 for auth and visualized data in Kibana
+GitHub: https://github.com/tejraval11/restaurant-review
+
+DoorStep Shine – Car Wash Booking App
+Tech: MERN Stack, Tailwind CSS
+- Created slot validation system & dynamic pricing logic
+- Admin dashboard for bookings and user feedback
+GitHub: https://github.com/tejraval11/Door-Step-Shine
+
+====================================================================
+TECHNICAL SKILLS
+====================================================================
+Frontend: React.js, Next.js, Tailwind CSS, HTML/CSS, JavaScript, TypeScript
+Backend: Node.js, Express.js, Java, Spring Boot, REST APIs, Microservices
+Databases: MongoDB, PostgreSQL, MySQL
+DevOps/Cloud: Docker, AWS, CI/CD
+AI/LLMs: GPT-4o-mini, LangChain, Agentic AI, LLM Orchestration, Prompt Engineering
+Tools: Git, Postman, Maven
+
+====================================================================
+ACHIEVEMENTS
+====================================================================
+- Solved 200+ LeetCode problems (Focused on DSA)
+- Scored 90.14% in TCS iON Cognitive Skills Assessment
+- Completed Spring Boot & MERN stack certifications
+- Won university-level badminton tournaments (3x champion)
+
+====================================================================
